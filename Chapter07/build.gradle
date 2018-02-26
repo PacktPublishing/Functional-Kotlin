@@ -1,0 +1,51 @@
+group 'com.packtpub'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.2.20'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.21.2'
+    compile 'com.h2database:h2:1.4.196'
+    compile 'org.springframework:spring-jdbc:5.0.2.RELEASE'
+    compile 'org.http4k:http4k-client-apache:3.13.0'
+    compile 'com.github.salomonbrys.kotson:kotson:2.5.0'
+    compile 'nl.komponents.kovenant:kovenant:3.3.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+compileKotlin {
+    kotlinOptions{
+        jvmTarget = "1.8"
+        freeCompilerArgs = ["-Xskip-runtime-version-check"]
+    }
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+kotlin {
+    experimental {
+        coroutines "enable"
+    }
+}
