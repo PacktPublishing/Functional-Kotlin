@@ -25,5 +25,3 @@ The only recommended software to run and write Kotlin programs is IntelliJ IDEA.
 
 * [Mastering High Performance with Kotlin](https://www.packtpub.com/application-development/mastering-high-performance-kotlin?utm_source=github&utm_medium=repository&utm_campaign=9781788996648)
 
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
