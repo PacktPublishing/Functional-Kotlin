@@ -1,8 +1,8 @@
 package com.packtpub.functionalkotlin.chapter12
 
 import arrow.syntax.function.memoize
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import kotlin.system.measureNanoTime
 
 fun recursiveFib(n: Long): Long = if (n < 2) {
@@ -29,7 +29,7 @@ fun imperativeFib(n: Long): Long {
 	}
 }
 
-/*fun main(args: Array<String>) {
+/*private fun main() {
 
 	var lambdaFib: (Long) -> Long = { it } //Declared ahead to be used inside recursively
 
@@ -54,7 +54,7 @@ inline fun milliseconds(description: String, body: () -> Unit): String {
 	return "$description:${measureNanoTime(body) / 1_000_000.00} ms"
 }
 
-fun main(args: Array<String>) = runBlocking {
+private fun main() = runBlocking {
 
 	var lambdaFib: (Long) -> Long = { it } //Declared ahead to be used inside recursively
 

@@ -9,7 +9,7 @@ fun partialSplitter(billAndOrder: Pair<Bill, PickingOrder>?, warehouse: (Picking
 	}
 }
 
-/*fun main(args: Array<String>) {
+/*private fun main() {
 	val splitter: (billAndOrder: Pair<Bill, PickingOrder>?) -> Unit = ::partialSplitter.partially2 { order -> println("TESTING $order") }(p2 = ::accounting)
 
 	val salesSystem: (quote: Quote) -> Unit = ::calculatePrice andThen ::filterBills forwardCompose splitter
@@ -18,7 +18,7 @@ fun partialSplitter(billAndOrder: Pair<Bill, PickingOrder>?, warehouse: (Picking
 	salesSystem(Quote(2000.0, "Foo", "Motorbike", 1))
 }
 
-fun main(args: Array<String>) {
+private fun main() {
 	val strong: (String, String, String) -> String = { body, id, style -> "<strong id=\"$id\" style=\"$style\">$body</strong>" }
 
 	val redStrong: (String, String) -> String = strong.partially3("font: red") //Explicit
@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
 	println(blueStrong("Deep Blue Sea", "movie2"))
 }*/
 
-fun main(args: Array<String>) {
+private fun main() {
 
 	val footer:(String) -> String = {content -> "<footer>$content</footer>"}
 
