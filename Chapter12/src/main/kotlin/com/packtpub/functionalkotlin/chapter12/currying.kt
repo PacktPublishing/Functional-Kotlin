@@ -4,7 +4,7 @@ import arrow.syntax.function.curried
 import arrow.syntax.function.invoke
 
 /*
-fun main(args: Array<String>) {
+private fun main() {
 
 	val strong: (String, String, String) -> String = { body, id, style -> "<strong id=\"$id\" style=\"$style\">$body</strong>" }
 
@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
 	"Fried Green Tomatoes" pipe ("movie7" pipe greenStrong) pipe ::println
 }*/
 
-fun main(args: Array<String>) {
+private fun main() {
 	val strong: (String, String, String) -> String = { body, id, style -> "<strong id=\"$id\" style=\"$style\">$body</strong>" }
 
 	println(strong.curried()("Batman Begins")("trilogy1")("color:black")) // Curried

@@ -4,7 +4,7 @@ import arrow.core.Predicate
 import arrow.syntax.function.complement
 
 
-fun main(args: Array<String>) {
+private fun main() {
 	val evenPredicate: Predicate<Int> = { i: Int -> i % 2 == 0 }
 	val oddPredicate: (Int) -> Boolean = evenPredicate.complement()
 
