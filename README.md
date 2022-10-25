@@ -25,3 +25,7 @@ The only recommended software to run and write Kotlin programs is IntelliJ IDEA.
 
 * [Mastering High Performance with Kotlin](https://www.packtpub.com/application-development/mastering-high-performance-kotlin?utm_source=github&utm_medium=repository&utm_campaign=9781788996648)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781788476485">https://packt.link/free-ebook/9781788476485 </a> </p>
