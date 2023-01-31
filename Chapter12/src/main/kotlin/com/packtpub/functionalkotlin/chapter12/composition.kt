@@ -37,7 +37,7 @@ fun splitter(billAndOrder: Pair<Bill, PickingOrder>?) {
 	}
 }
 
-fun main(args: Array<String>) {
+fun main() {
 	val salesSystem: (quote: Quote) -> Unit = ::calculatePrice andThen ::filterBills forwardCompose ::splitter
 	salesSystem(Quote(20.0, "Foo", "Shoes", 1))
 	salesSystem(Quote(20.0, "Bar", "Shoes", 200))
@@ -61,7 +61,7 @@ val randomNames: () -> String = {
 }
 
 /*
-fun main(args: Array<String>) {
+private fun main() {
 	val divStrong: (String) -> String = div compose strong
 
 	val spanP: (String) -> String = p forwardCompose span
